@@ -1,0 +1,51 @@
+#include<stdio.h>
+
+struct student
+{
+	int roll_num;
+	char name[50];
+	int age;
+	char div[10];
+};
+
+void main()
+{
+	int i;
+	char c1;
+	struct student S1,S2;
+	struct student St[10];
+
+	for(i=0;i<10;i++)
+	{
+		printf("\n Please Enter Roll Number for Student %d ", i+1);
+		scanf("%d", &St[i].roll_num);
+	}
+
+	printf("\n Enter roll number For S1 : ");
+	scanf("%d", &S1.roll_num);
+	printf("\n Enter age number For S1 : ");
+	scanf("%d", &S1.age);
+	printf("\n Enter Name For S1 : ");
+	scanf("%s", S1.name);
+	printf("\n Enter Division Name For S1 : ");
+	scanf("%s", S1.div);
+	
+	printf("\n Enter roll number For S2 : ");
+	scanf("%d", &S2.roll_num);
+	printf("\n Enter age number For S2 : ");
+	scanf("%d", &S2.age);
+	printf("\n Enter Name For S2 : ");
+	scanf("%s", S2.name);
+	printf("\n Enter Division Name For S2 : ");
+	scanf("%s", S2.div);
+
+	printf("\n Entered Roll number For S1 is %d ", S1.roll_num);
+	printf("\n Entered Age For S1 is %d ", S1.age);
+	printf("\n Entered Name For S1 is %s ", S1.name);
+	printf("\n Entered Division Name For S1 is %s ", S1.div);
+	
+	printf("\n Entered Roll number For S2 is %d ", S2.roll_num);
+        printf("\n Entered Age For S2 is %d ", S2.age);
+	printf("\n Entered Name For S2 is %s ", S2.name);
+	printf("\n Entered Division Name For S2 is %s ", S2.div);
+}
